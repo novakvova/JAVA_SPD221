@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="951c714c-2751-4173-9757-3d2376550067" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/HibernateJava/src/main/java/org/example/entities/OrderEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HibernateJava/src/main/java/org/example/entities/OrderStatusEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HibernateJava/src/main/java/org/example/util/HibernateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HibernateJava/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/HibernateJava/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HibernateJava/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/HibernateJava/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HibernateJava/src/main/java/org/example/entities/ClientEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/HibernateJava/src/main/java/org/example/entities/ClientEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="951c714c-2751-4173-9757-3d2376550067" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
