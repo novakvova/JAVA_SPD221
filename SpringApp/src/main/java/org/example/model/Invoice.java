@@ -19,5 +19,6 @@ public class Invoice {
     private Long id;
     private String name;
     private String location;
+    private String fileName;
     private Double amount;
 }
