@@ -30,7 +30,6 @@ public class InvoiceController {
             //  Model model,
             RedirectAttributes attributes
     ) {
-        service.saveInvice(invoice);
         Long id = service.saveInvice(invoice).getId();
         //String message = "Record with id : '"+id+"' is saved successfully !";
 //        model.addAttribute("message", message);
