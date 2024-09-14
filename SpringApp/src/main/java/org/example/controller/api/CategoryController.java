@@ -2,6 +2,7 @@ package org.example.controller.api;
 
 import lombok.AllArgsConstructor;
 import org.example.dto.category.CategoryCreateDTO;
+import org.example.dto.category.CategoryItemDTO;
 import org.example.mapper.CategoryMapper;
 import org.example.model.CategoryEntity;
 import org.example.repo.CategoryRepository;
@@ -40,8 +41,8 @@ public class CategoryController {
     }
 
     @GetMapping("")
-    public ResponseEntity<List<CategoryEntity>> getAllCategories() {
-        List<CategoryEntity> categories = categoryRepository.findAll();
+    public ResponseEntity<List<CategoryItemDTO>> getAllCategories() {
+        var categories = categoryMapper.toDto(categoryRepository.findAll());
         return ResponseEntity.ok(categories);
     }
 }

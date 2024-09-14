@@ -33,7 +33,7 @@ public class ProductSeeder implements CommandLineRunner {
     @Override
     public void run(String... args) throws IOException {
         if (categoryRepository.count() == 0) {
-            int categoryCount = 10; //кільскість категорій
+            int categoryCount = 3; //кільскість категорій
             //мінімальна і максимальна кількість фото для 1 товару
             int min = 3;
             int max = 5;
@@ -47,7 +47,7 @@ public class ProductSeeder implements CommandLineRunner {
                 imagesFutures.add(
                         CompletableFuture.supplyAsync(() -> {
                             try {
-                                return storageService.saveImage("https://picsum.photos/300/300", FileSaveFormat.WEBP);
+                                return storageService.saveImage("https://picsum.photos/1200/800", FileSaveFormat.WEBP);
                             } catch (IOException e) {
                                 throw new RuntimeException(e);
                             }
