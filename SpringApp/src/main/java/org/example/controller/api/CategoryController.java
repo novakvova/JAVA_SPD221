@@ -10,12 +10,10 @@ import org.example.storage.StorageService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 @RestController
 @AllArgsConstructor
@@ -39,6 +37,12 @@ public class CategoryController {
         catch (Exception ex) {
             return new ResponseEntity<>(null, HttpStatus.BAD_REQUEST);
         }
+    }
+
+    @GetMapping("")
+    public ResponseEntity<List<CategoryEntity>> getAllCategories() {
+        List<CategoryEntity> categories = categoryRepository.findAll();
+        return ResponseEntity.ok(categories);
     }
 }
 
